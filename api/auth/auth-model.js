@@ -15,7 +15,6 @@ function getUserById(id) {
 function getUserByUsername(username) {
   return db('users')
     .where({username})
-    // .select("username")
     .first()
 }
 
